@@ -1,0 +1,97 @@
+
+<html>
+<head>
+<title>Spanish stemmer / Lematizador para español</title>
+<meta name="description" content="A PHP spanish stemmer / Un lematizador de español implementado en PHP">
+<meta name="keywords" content="stemmer,stemm,spanish,lematizador,español,php">
+<style>
+BODY, TD, P {
+	font-family: Arial, Helvetica;
+	font-size: 11pt;
+}
+</style>
+</head>
+<body>
+<table width="100%" align="center" border="0" cellpadding="0" cellspacing="7">
+<tr>
+	<td width="50%">
+	<h1 style="margin-bottom:2px">Stemmer-es</h1>
+	A spanish stemmer / Un lematizador de español
+	</td>
+</tr>
+<tr height="1px" bgcolor="#000000">
+<td colspan=2></td>
+</tr>
+<tr style="border-top: 1px solid #000000">
+	<td width="50%" valign="top">
+	<center><b>English</b></center>
+	<br>
+	This is a PHP implementation of a stemmer. It's based on the algorithm by <a href="http://www.tartarus.org/~martin/index.html">Martin Porter</a>. More specifically, it's based on the <a href="http://www.snowball.tartarus.org/algorithms/spanish/stemmer.html">Spanish stemming algorithm</a> of <a href="http://www.snowball.tartarus.org/">Snowball</a>.
+	<BR><BR>
+	<b><i>How to use</i></b><br><br>
+	Download the package from Github: <a href="https://github.com/pragone/stemmer-es/releases" target="_blank">https://github.com/pragone/stemmer-es/releases</a>.<br><br>
+	Include the file stemm_es.php in your php script and call it's stemm method. The method is static so the call would be:<br><br>
+	<code>
+	$result = stemm_es::stemm('canciones');
+	</code><br>
+	Note that the method only stemms one word at a time, you must split the text before feeding it to the stemmer.
+	<br>
+	<br>
+	<b><i>What's included</i></b><br><br>
+	The tgz file includes three files:
+	<ul>
+		<li>stemm_es.php: This is the file you really need</li>
+		<li>stemm_test.php: A script file for testing the stemmer against the corpus found on the <a href="http://www.snowball.tartarus.org/algorithms/spanish/stemmer.html">Spanish stemming algorithm</a> page</li>
+		<li>stemm_test_corpus.txt: The test corpus. It's a list of words and stemms (one per line)</li>
+	</ul>
+	<br>
+	<BR>
+	<b><i>Does it work?</i></b><br><br>
+	Using the corpus provided all the words were stemmed as expected. Actually the test script shows that the whole test corpus (28390 words) was stemmed in less than a second so it has a nice performance ;)
+	<BR>
+	<BR>
+	<b><i>Licence and other stuff</i></b><br><br>
+	This is a free library provided under the <A HREF="http://www.gnu.org/licenses/lgpl.html" target="_blank">LGPL license</A> and comes with no guarantees. If you feel it was usefull to you please send me an email at pragone at sourceforge dot net.
+	<BR>
+	<BR>
+	<b><i>Me</i></b><br><br>
+	My name is Paolo Ragone, and you can see the Open Source projects I'm working on here: <A HREF="http://sourceforge.net/users/pragone/">http://sourceforge.net/users/pragone/</A> or on my blog: <A href="http://pragone.com/" title="development and community">http://pragone.com/</A>.
+	</td>
+	<td width="50%" valign="top">
+	<center><b>Español</b></center>
+	<br>
+	Esta es una implementación en PHP de un lematizador de español. Está basado en el algoritmo de <a href="http://www.tartarus.org/~martin/index.html">Martin Porter</a>. Específicamente, está basado en el <a href="http://www.snowball.tartarus.org/algorithms/spanish/stemmer.html">Spanish stemming algorithm</a> de <a href="http://www.snowball.tartarus.org/">Snowball</a>.
+	<BR><BR>
+	<b><i>Cómo utilizarlo</i></b><br><br>
+	Descarga la librería de Github: <a href="https://github.com/pragone/stemmer-es/releases" target="_blank">https://github.com/pragone/stemmer-es/releases</a>.<br><br>
+	Incluye el archivo stemm_es.php en tu php e invoca al método stemm. Este método es estático, por lo que la llamada sería algo así:<br><br>
+	<code>
+	$result = stemm_es::stemm('canciones');
+	</code><br>
+	Nota: el método sólo obtiene la raíz de una palabra a la vez, por lo que debes picar tu texto en palabras antes de pasárselo al lematizador.
+	<br>
+	<br>
+	<b><i>¿Qué incluye?</i></b><br><br>
+	El archivo tgz incluye:
+	<ul>
+		<li>stemm_es.php: Este es el único archivo que realmente necesitas</li>
+		<li>stemm_test.php: Un programa para probar el lematizador contra un corpus de prueba encontrado en la página de <a href="http://www.snowball.tartarus.org/algorithms/spanish/stemmer.html">Spanish stemming algorithm</a></li>
+		<li>stemm_test_corpus.txt: El corpus de prueba. Es una lista de palabras y su raiz (una por línea)</li>
+	</ul>
+	<br>
+	<BR>
+	<b><i>Funciona?</i></b><br><br>
+	Utilizando el corpus provisto, todas las raíces de las palabras fueron obtenidas perfectamente. De hecho, el script de prueba muestra que todo el corpus (28390 palabras) fue procesado en menos de un segundo, por lo que tiene un buen rendimiento ;)
+	<BR>
+	<BR>
+	<b><i>Licencia y otras cosas</i></b><br><br>
+	Esta es una librería gratuita liberada bajo la licencia <A HREF="http://www.gnu.org/licenses/lgpl.html" target="_blank">LGPL</A> y viene sin ninguna garantía. Si te ha sido de utilidad, por favor, envíame un correo a: pragone at sourceforge dot net.
+	<BR>
+	<BR>
+	<b><i>Yo</i></b><br><br>
+	Me llamo Paolo Ragone, y puedes ver los proyectos de código libre en los que estoy trabajando aquí: <A HREF="http://sourceforge.net/users/pragone/">http://sourceforge.net/users/pragone/</A> o en mi blog: <A href="http://pragone.com/" title="desarrollo y comunidad">http://pragone.com/</A>.
+	</td>
+</tr>
+</table>
+</body>
+</html>
